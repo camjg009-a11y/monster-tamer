@@ -75,8 +75,7 @@ class StarterScene extends Phaser.Scene {
                 }).setOrigin(0.5);
 
             // Monster emoji
-            const emoji = this.add.text(0, -80, monster.emoji, {
-                            fontSize: '64px'
+        const emoji = this.add.text(0, -80, monster.sprite, {                            fontSize: '64px'
             }).setOrigin(0.5);
 
             // Name
@@ -93,8 +92,7 @@ class StarterScene extends Phaser.Scene {
             }).setOrigin(0.5);
 
             // Stats
-            const stats = this.add.text(0, 30, `HP ${monster.hp} · MP ${monster.mp} · ATK ${monster.attack}`, {
-                            fontSize: '14px',
+        const stats = this.add.text(0, 30, `HP ${monster.baseStats.hp} · MP ${monster.baseStats.mp} · ATK ${monster.baseStats.atk}`, {                            fontSize: '14px',
                             fill: '#aaa'
             }).setOrigin(0.5);
 
