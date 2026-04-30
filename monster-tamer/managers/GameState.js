@@ -18,7 +18,7 @@ class GameState {
             guarding: false
         };
         
-        this.player = null; // Current monster companion
+        this.player = {}; // Current monster companion
         this.wins = 0;
         this.currentZone = 'village';
         this.spawnZone = 'village';
