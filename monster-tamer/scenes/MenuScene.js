@@ -88,20 +88,20 @@ class MenuScene extends Phaser.Scene {
         this.contentContainer.add(heroCard);
         
         // Monster
-        const monsterCard = this.createPartyCard(50, 0, {
-            name: gameState.player.name,
-            icon: gameState.player.sprite,
-            type: gameState.player.type,
-            level: gameState.player.level,
-            hp: gameState.player.currentHp,
-            maxHp: gameState.player.maxHp,
-            mp: gameState.player.currentMp,
-            maxMp: gameState.player.maxMp,
-            atk: gameState.player.atk,
-            def: gameState.player.def,
-            moves: gameState.player.moves
-        });
-        this.contentContainer.add(monsterCard);
+        const monster = gameState.player.monsters[0];
+                const monsterCard = this.createPartyCard(50, 0, {
+                                name: monster.name,
+                                icon: monster.sprite,
+                                type: monster.type,
+                                level: 1,
+                                hp: monster.baseStats.hp,
+                                maxHp: monster.baseStats.hp,
+                                mp: monster.baseStats.mp,
+                                maxMp: monster.baseStats.mp,
+                                atk: monster.baseStats.atk,
+                                def: monster.baseStats.def,
+                                moves: monster.moves
+                });this.contentContainer.add(monsterCard);
     }
     
     createPartyCard(x, y, data) {
