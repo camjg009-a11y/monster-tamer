@@ -140,7 +140,7 @@ class StarterScene extends Phaser.Scene {
             // Initialize game state
             gameState.player.starter = this.selectedStarter;
                 gameState.player.monsters = [this.selectedStarter];
-                gameState.saveGame();
+                gameState.save();
 
             this.scene.start('MenuScene');
     }
