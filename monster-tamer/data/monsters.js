@@ -1,4 +1,4 @@
-// Monster Database
+h// Monster Database
 const MONSTERS = {
     emberpaw: {
         id: 'emberpaw',
@@ -54,10 +54,10 @@ const MONSTERS = {
         ]
     },
     
-    mosscreep: {
-        id: 'mosscreep',
+    swangel: {
+        id: 'swangel',
         num: 3,
-        name: 'Mosscreep',
+        name: 'swangel',
         type: 'Angel',
         rarity: 'Starter',
         habitat: 'Starter choice',
