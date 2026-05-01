@@ -27,7 +27,7 @@ class StarterScene extends Phaser.Scene {
             }).setOrigin(0.5);
 
             // Starter options
-            const starters = ['emberpaw', 'tidalfin', 'mosscreep'];
+            const starters = ['emberpaw', 'tidalfin', 'swangel'];
                 const startX = width / 2 - 250;
                 const y = 280;
 
