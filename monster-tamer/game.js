@@ -9,7 +9,8 @@ const config = {
         mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH
     },
-    scene: [
+    scene: 
+                TitleScene,
         BootScene,
         StarterScene,
         WorldMapScene,
